@@ -1,0 +1,22 @@
+CREATE TABLE Transactions (
+    transactionNo BIGSERIAL,
+    intermediatry_name VARCHAR(128),
+    intermediatry_id VARCHAR(16),
+    initiating_name VARCHAR(128),
+    initiating_industry_id VARCHAR(16),
+    addressline1 VARCHAR(128),
+    addressline2 VARCHAR(128),
+    addressline3 VARCHAR(128),
+    address_type VARCHAR(16),
+    city VARCHAR(128),
+    country VARCHAR(128),
+    postalcode VARCHAR(128),
+    state_region VARCHAR(128),
+    channel VARCHAR(64),
+    tickersymbol VARCHAR(5),
+    transaction_date DATE,
+    aum FLOAT(4),
+    nna FLOAT(4),
+    shares FLOAT(4),
+    PRIMARY KEY (transactionNo)
+);
