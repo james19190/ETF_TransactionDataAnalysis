@@ -1,35 +1,24 @@
-
-<h1>ETF NYSE Transaction Data Analysis</h1>
+# ETF NYSE Transaction Data Analysis
  
-<h2>Description</h2>
-Analyzing time-series stock movement data to identify key and new market players. 
+## Description
+This project involves the analysis of time-series stock movement data to identify key and new market players in the ETF market on the New York Stock Exchange (NYSE).
 
+## Overview
+- PostgreSQL RDS Database: A PostgreSQL RDS (Relational Database Service) database is constructed to optimize query-time efficiency and prioritize scalability for rapidly growing transaction data.
+- Data Import from <BroadRidge API>: Monthly data on four different types of ETF products operated by QRAFT TECHNOLOGIES is imported using the <BroadRidge API>. The data is crucial for understanding market trends.
+- Data Normalization with PANDAS and SQLAlchemy: The imported data is automatically normalized into the locally run server at the firm using PANDAS for data manipulation and SQLAlchemy for efficient database interaction.
+- GUI Program for User Interaction: To ensure maintainability and user-friendliness, a simple GUI program is developed. This allows non-technical users to interact with and query the database, making insights accessible to a broader audience.
+- Automatic Report Generation: An automatic report generator is implemented to send relevant monthly data to the sales team in the US through email. This ensures that key insights are communicated efficiently.
 
-- A PostgreSQL RDS database is constructed to optimize query-time efficiency and prioritize scalability for rapidly growing transaction data.
-- On a monthly basis, \<BroadRidge API> is called to import data on 4 different types of ETF Products operated by QRAFT TECHNOLOGIES.
-- The input data is automatically normalized into the locally run server at the firm through PANDAS and SQLAlchemy.
-- To ensure maintainability, a simple GUI program was developed to allow non-technical users to interact and query from the DB.
-- An automatic report generator was developed to send relevant monthly data to the sales team in the US through email.
+## Technologies Used
+- Python:
+  - PySimpleGUI: A Python library for creating simple graphical user interfaces.
+  - SQLAlchemy: A SQL toolkit and Object-Relational Mapping (ORM) library for Python.
+  - Psycopg2: A PostgreSQL adapter for Python.
+  - PANDAS: A powerful data manipulation and analysis library.
+- PostgreSQL: A powerful, open-source relational database system.
+- CSV: Comma-separated values format is used for efficient data exchange.
 
+## Contributing
+Feel free to contribute to the project by submitting issues or pull requests. Your input and suggestions are valuable!
 
-
-<h2>Languages and Utilities Used</h2>
-
-- <b>Python</b>
-  - PySimpleGUI
-  - SQLAlchemy
-  - Pscycopg2
-  - Pandas
-- <b>PostgreSQL</b>
-- <b>CSV</b>
-
-
-<h2>Environments Used </h2>
-
-- <b>Visual Studio Code</b>
-
-<h2>Program walk-through:</h2>
-
-<p align="center">
-Program Output: <br/>
-<a href="https://drive.google.com/uc?export=view&id=1g8B6U3k_L_KjDJgwUW_M8By2Zh1JQMXX"><img src="https://drive.google.com/uc?export=view&id=1g8B6U3k_L_KjDJgwUW_M8By2Zh1JQMXX" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
